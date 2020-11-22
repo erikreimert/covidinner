@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-webapp-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, user-scalable=no" >     <title>Register</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="secondary"> Join a Party! </header>
+	<button class="back" onclick="location.href='landing.html';">Back</button>
+	<div class="info">
+		<form method="post" id="register" >
+
+          <div class="error" id="name-error">Name</div>
+          <input required type="text" name="name" id="name">
+
+          	<div class="error" id="brings-error">What are you bringing?</div>
+          	<input required type="text" name="brings" id="brings">
+						<div class="error" id = 'covid'>You agree to be or have been covid tested?</div>
+						<input required type="checkbox" name ='covid' id = 'covid' value = 'Yes'>
+          	<div class="error" id="activity-error">Activity Suggestions?</div>
+          		<input required type="text" name="activity" id="activity">
+          	<div class="error" id="pwd-error">Hosts Name</div>
+          <input required type="text" name="name" id="name">
+					<div class="error" id="pwd-error">Hosts Password</div>
+				<input required type="password" name="pwd" id="pwd">
+
+			<br />
+			<input type="submit" value="Join"onclick="alert('You have succesfully joined the party! Redirecting to party view.');">
+		
+		</form>
+	</div>
+	<script src="stay_standalone.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-webapp-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width, user-scalable=no" >     <title>Register</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="secondary"> Create a Party! </header>
+	<button class="back" onclick="location.href='landing.html';">Back</button>
+	<div class="info">
+		<form method="post" id="register" >
+
+          <div class="error" id="name-error">Name</div>
+          <input required type="text" name="name" id="name">
+
+          	<div class="error" id="address-error">Address</div>
+          	<input required type="text" name="address" id="address">
+
+          	<div class="error" id="date-error">Date</div>
+          		<input required type="date" name="date" id="date">
+          	<div class="error" id="pwd-error">Password</div>
+          <input required type="password" name="pwd" id="pwd">
+
+			<br />
+			<input type="submit" value="Generate Invite">
+		</form>
+	</div>
+	<script src="stay_standalone.js"></script>
+</body>
+</html>
