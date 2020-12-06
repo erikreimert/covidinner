@@ -5,6 +5,11 @@
 	<meta name="apple-mobile-webapp-status-bar-style" content="black">
 	<meta name="viewport" content="width=device-width, user-scalable=no" >     <title>Register</title>
 	<link rel="stylesheet" href="style.css">
+	<script>
+		function party(){
+			alert("Party time! Heres the invite link! Dont forget to tell your guests the password. \n https://erikreimert.github.io/covidinner/join.html");
+		}
+	</script>
 </head>
 <body>
 	<header class="secondary"> Create a Party! </header>
@@ -24,7 +29,7 @@
           <input required type="password" name="pwd" id="pwd">
 
 			<br />
-			<input type="submit" value="Generate Invite">
+			<input type="submit" value="Generate Invite" onclick = "party()">
 		</form>
 	</div>
 	<script src="stay_standalone.js"></script>
